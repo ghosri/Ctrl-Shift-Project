@@ -97,3 +97,45 @@ img {
 
 </body>
 </html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .box {
+      width: 300px;
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin: 20px;
+    }
+
+    .hidden-content {
+      display: none;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="box" id="myBox">
+  <p>This is the visible content of the box.</p>
+  <button onclick="toggleContent()">Toggle Content</button>
+  <div class="hidden-content" id="hiddenContent">
+    <p>This is the hidden content.</p>
+    <!-- Add more hidden content as needed -->
+  </div>
+</div>
+
+<script>
+  function toggleContent() {
+    var hiddenContent = document.getElementById("hiddenContent");
+    if (hiddenContent.style.display === "none") {
+      hiddenContent.style.display = "block";
+    } else {
+      hiddenContent.style.display = "none";
+    }
+  }
+</script>
+
+</body>
+</html>
